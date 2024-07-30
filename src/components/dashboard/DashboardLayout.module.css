@@ -1,0 +1,93 @@
+.dashboardLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-top: 80px; /* Adjust this value based on your navbar height */
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .mainContent {
+      padding: 1rem;
+      margin-top: 60px; /* Adjust for smaller navbar on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mainContent {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* Add some global styles for common elements within the dashboard */
+  .dashboardLayout h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+  }
+  
+  .dashboardLayout h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+  
+  .dashboardLayout p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .dashboardLayout a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboardLayout a:hover {
+    color: var(--link-hover-color);
+  }
+  
+  /* Add a subtle box shadow to create depth for content areas */
+  .contentBox {
+    background-color: var(--content-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style for buttons within the dashboard */
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  /* Add a subtle transition for smoother page loads */
+  .fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

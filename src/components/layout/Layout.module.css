@@ -1,0 +1,4 @@
+.mainContent {
+  padding-top: 80px; /* Ajusta este valor según la altura de tu navbar */
+  min-height: calc(100vh - 80px); /* Esto asegura que el contenido ocupe al menos toda la altura de la pantalla menos la altura del navbar */
+}

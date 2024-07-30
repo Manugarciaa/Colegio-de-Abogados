@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.5rem;
+  }
+}
