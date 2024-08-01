@@ -10,9 +10,9 @@ const ContactPage = () => {
         <div className={styles.contactContent}>
           <div className={styles.contactInfo}>
             <h2>Información de Contacto</h2>
-            <p>Dirección: Calle Principal 123, Ciudad</p>
-            <p>Teléfono: (123) 456-7890</p>
-            <p>Email: info@colegiodeabogados.com</p>
+            <p><i className="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+            <p><i className="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i className="fas fa-envelope"></i> info@colegiodeabogados.com</p>
           </div>
           <form className={styles.contactForm}>
             <input type="text" placeholder="Nombre" required />

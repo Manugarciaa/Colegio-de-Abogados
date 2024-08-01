@@ -1,0 +1,41 @@
+/* services.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section p {
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .section {
+      padding: 0.8rem;
+    }
+  }

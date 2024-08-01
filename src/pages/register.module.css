@@ -1,0 +1,84 @@
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Ajusta según la altura de tu navbar */
+  background-color: #f7f7f7;
+  padding: 1rem;
+}
+
+.registerCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.registerForm input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.registerButton {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.registerButton:hover {
+  background-color: #003d82;
+}
+
+.login {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .registerCard {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .registerForm input,
+  .registerButton {
+    padding: 0.7rem;
+  }
+}

@@ -17,7 +17,7 @@ const LoginPage = () => {
             <a href="#">¿Olvidaste tu contraseña?</a>
           </p>
           <p className={styles.register}>
-            ¿No tienes una cuenta? <a href="#">Regístrate</a>
+            ¿No tienes una cuenta? <a href="/register">Regístrate</a>
           </p>
         </div>
       </div>

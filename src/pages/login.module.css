@@ -4,6 +4,7 @@
   align-items: center;
   min-height: calc(100vh - 80px); /* Ajusta según la altura de tu navbar */
   background-color: #f7f7f7;
+  padding: 1rem;
 }
 
 .loginCard {
@@ -33,6 +34,8 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .loginButton {
@@ -44,6 +47,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .loginButton:hover {
@@ -62,4 +66,19 @@
 
 .forgotPassword a:hover, .register a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .loginCard {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .loginForm input,
+  .loginButton {
+    padding: 0.7rem;
+  }
 }

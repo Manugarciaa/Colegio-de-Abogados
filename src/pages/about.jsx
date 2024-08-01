@@ -17,17 +17,17 @@ const AboutPage = () => {
           <div className={styles.values}>
             <h2>Nuestros Valores</h2>
             <ul>
-              <li>Integridad</li>
-              <li>Excelencia</li>
-              <li>Compromiso</li>
-              <li>Innovación</li>
-              <li>Responsabilidad Social</li>
+              <li><i className="fas fa-check-circle"></i> Integridad</li>
+              <li><i className="fas fa-check-circle"></i> Excelencia</li>
+              <li><i className="fas fa-check-circle"></i> Compromiso</li>
+              <li><i className="fas fa-check-circle"></i> Innovación</li>
+              <li><i className="fas fa-check-circle"></i> Responsabilidad Social</li>
             </ul>
           </div>
         </section>
         <section className={styles.history}>
           <h2>Nuestra Historia</h2>
-          <p>Fundado en [año], el Colegio de Abogados ha sido un pilar en la comunidad legal durante más de [número] años. A lo largo de nuestra historia, hemos...</p>
+          <p>Fundado en 1950, el Colegio de Abogados del Sur de Tucumán ha sido un pilar en la comunidad legal durante más de 70 años. A lo largo de nuestra historia, hemos sido testigos y partícipes de importantes cambios en el sistema legal, siempre abogando por la justicia y el estado de derecho.</p>
         </section>
       </div>
     </Layout>
