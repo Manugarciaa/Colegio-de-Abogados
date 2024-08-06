@@ -1,10 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
 import styles from './about.module.css';
+import Head from 'next/head';
 
 const AboutPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Acerca del Colegio de Abogados del Sur de Tucumán</title>
+        <meta name="description" content="Conoce la misión, visión, valores e historia del Colegio de Abogados del Sur de Tucumán. Promovemos la excelencia en la práctica legal y defendemos la justicia." />
+      </Head>
       <div className={styles.aboutPage}>
         <h1 className={styles.title}>Acerca del Colegio de Abogados</h1>
         <section className={styles.aboutContent}>
@@ -27,7 +32,7 @@ const AboutPage = () => {
         </section>
         <section className={styles.history}>
           <h2>Nuestra Historia</h2>
-          <p>Fundado en 1950, el Colegio de Abogados del Sur de Tucumán ha sido un pilar en la comunidad legal durante más de 70 años. A lo largo de nuestra historia, hemos sido testigos y partícipes de importantes cambios en el sistema legal, siempre abogando por la justicia y el estado de derecho.</p>
+          <p>Mediante la Ley 6023 se creó el Colegio de Abogados del Sur, con la categoría de organismo de la administración de justicia.</p>
         </section>
       </div>
     </Layout>

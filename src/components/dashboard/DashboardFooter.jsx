@@ -1,44 +1,43 @@
 import Link from 'next/link';
 import styles from './DashboardFooter.module.css';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const DashboardFooter = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <div className={styles.footerGrid}>
+        <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <h3>Aula Virtual</h3>
-            <p>Plataforma de educación legal del Colegio de Abogados.</p>
+            <h3>Colegio de Abogados</h3>
+            <p>Defendiendo la justicia y promoviendo la excelencia legal.</p>
             <div className={styles.socialLinks}>
-              <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-              <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook"><Facebook size={16} /></a>
+              <a href="#" aria-label="Twitter"><Twitter size={16} /></a>
+              <a href="#" aria-label="LinkedIn"><Linkedin size={16} /></a>
             </div>
           </div>
-          <div className={styles.footerSection}>
-            <h3>Enlaces Rápidos</h3>
-            <ul className={styles.footerLinks}>
-              <li><Link href="/dashboard">Inicio</Link></li>
-              <li><Link href="/dashboard/courses">Cursos</Link></li>
-              <li><Link href="/dashboard/schedule">Horario</Link></li>
-              <li><Link href="/dashboard/resources">Recursos</Link></li>
-            </ul>
-          </div>
-          <div className={styles.footerSection}>
-            <h3>Soporte</h3>
-            <ul className={styles.footerLinks}>
-              <li><Link href="/dashboard/help">Centro de Ayuda</Link></li>
-              <li><Link href="/dashboard/faq">Preguntas Frecuentes</Link></li>
-              <li><Link href="/dashboard/contact">Contacto</Link></li>
-            </ul>
+          <div className={styles.footerLinks}>
+            <div className={styles.linkColumn}>
+              <h4>Enlaces Rápidos</h4>
+              <Link href="/dashboard">Panel de Control</Link>
+              <Link href="/dashboard/cases">Mis Casos</Link>
+              <Link href="/dashboard/library">Biblioteca Legal</Link>
+              <Link href="/dashboard/events">Eventos</Link>
+            </div>
+            <div className={styles.linkColumn}>
+              <h4>Soporte</h4>
+              <Link href="/dashboard/help">Centro de Ayuda</Link>
+              <Link href="/dashboard/faq">Preguntas Frecuentes</Link>
+              <Link href="/dashboard/contact">Contacto</Link>
+            </div>
           </div>
         </div>
         <div className={styles.footerBottom}>
           <p>&copy; {new Date().getFullYear()} Colegio de Abogados. Todos los derechos reservados.</p>
-          <ul className={styles.legalLinks}>
-            <li><Link href="/privacy">Política de Privacidad</Link></li>
-            <li><Link href="/terms">Términos de Uso</Link></li>
-          </ul>
+          <div className={styles.legalLinks}>
+            <Link href="/privacy">Política de Privacidad</Link>
+            <Link href="/terms">Términos de Uso</Link>
+          </div>
         </div>
       </div>
     </footer>

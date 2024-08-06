@@ -29,9 +29,9 @@ const Footer = () => {
           </div>
           <div className={styles.footerSection}>
             <h3>Contacto</h3>
-            <p><i className="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad Ficticia</p>
-            <p><i className="fas fa-phone"></i> (123) 456-7890</p>
-            <p><i className="fas fa-envelope"></i> info@colegiodelosabogados.com</p>
+            <p><i className="fas fa-map-marker-alt"></i> España 1583, Concepción, Tucuman, Argentina 4149</p>
+            <p><i className="fas fa-phone"></i> +54 9 3865821116</p>
+            <p><i className="fas fa-envelope"></i> sec.colegioabogadossur@gmail.com</p>
           </div>
           <div className={styles.footerSection}>
             <h3>Suscríbete a nuestro boletín</h3>

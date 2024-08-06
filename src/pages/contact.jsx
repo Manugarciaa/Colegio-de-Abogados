@@ -10,9 +10,18 @@ const ContactPage = () => {
         <div className={styles.contactContent}>
           <div className={styles.contactInfo}>
             <h2>Información de Contacto</h2>
-            <p><i className="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
-            <p><i className="fas fa-phone"></i> (123) 456-7890</p>
-            <p><i className="fas fa-envelope"></i> info@colegiodeabogados.com</p>
+            <div className={styles.infoItem}>
+              <span className={styles.infoLabel}>Ubicación:</span>
+              <p className={styles.infoValue}><i className="fas fa-map-marker-alt"></i> España 1583, Concepción, Tucuman, Argentina</p>
+            </div>
+            <div className={styles.infoItem}>
+              <span className={styles.infoLabel}>Teléfono:</span>
+              <p className={styles.infoValue}><i className="fas fa-phone"></i> +54 9 3865821116</p>
+            </div>
+            <div className={styles.infoItem}>
+              <span className={styles.infoLabel}>Email:</span>
+              <p className={styles.infoValue}><i className="fas fa-envelope"></i> sec.colegioabogadossur@gmail.com</p>
+            </div>
           </div>
           <form className={styles.contactForm}>
             <input type="text" placeholder="Nombre" required />

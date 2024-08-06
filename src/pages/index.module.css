@@ -1,8 +1,32 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
 .homePage {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   font-family: 'Arial', sans-serif;
+}
+
+.homePage > section {
+  margin-bottom: 4rem;
+  padding: 2rem;
 }
 
 .hero {
@@ -44,23 +68,23 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.about {
+.membership {
   text-align: center;
   margin-bottom: 4rem;
 }
 
-.about h2 {
+.membership h2 {
   font-size: 2.5rem;
   color: #1a5f7a;
   margin-bottom: 1rem;
   font-weight: 300;
 }
 
-.about p {
+.membership p {
   font-size: 1.1rem;
   color: #555;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 
 .features {
@@ -123,29 +147,61 @@
   color: #555;
 }
 
-.cta {
-  text-align: center;
-  background-color: #1a5f7a;
-  color: white;
-  padding: 4rem 2rem;
-  border-radius: 8px;
+.matriculacion {
+  background-color: #f8f8f8;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 4rem;
 }
 
-.cta h2 {
+.matriculacion h2 {
   font-size: 2.5rem;
+  color: #1a5f7a;
   margin-bottom: 1rem;
-  font-weight: 300;
 }
 
-.cta p {
+.matriculacion p {
   font-size: 1.1rem;
+  color: #555;
   margin-bottom: 2rem;
 }
 
-.ctaButton {
-  background-color: white;
+.requisitos {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.requisitos h3 {
+  font-size: 1.8rem;
   color: #1a5f7a;
+  margin-bottom: 1rem;
+}
+
+.requisitos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.requisitos li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.requisitos li::before {
+  content: '•';
+  color: #1a5f7a;
+  position: absolute;
+  left: 0;
+}
+
+.ctaButton {
+  background-color: #1a5f7a;
+  color: white;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -155,9 +211,28 @@
 }
 
 .ctaButton:hover {
-  background-color: #f0f0f0;
+  background-color: #2a9d8f;
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cta {
+  text-align: center;
+  background-color: #1a5f7a;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .testimonials {
@@ -169,7 +244,6 @@
   font-size: 2.5rem;
   color: #1a5f7a;
   margin-bottom: 2rem;
-  font-weight: 300;
 }
 
 .testimonial {
@@ -182,33 +256,31 @@
 }
 
 .testimonial p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #555;
   font-style: italic;
   margin-bottom: 1rem;
 }
 
-.testimonial cite {
+.testimonial::after {
+  content: attr(data-author);
+  display: block;
   font-size: 1rem;
   color: #1a5f7a;
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
   .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .subtitle {
     font-size: 1.2rem;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
-
-  .cta h2 {
-    font-size: 2rem;
   }
 
   .stats {
@@ -217,5 +289,13 @@
 
   .stat {
     margin-bottom: 2rem;
+  }
+
+  .matriculacion {
+    padding: 2rem;
+  }
+
+  .requisitos {
+    padding: 0 1rem;
   }
 }

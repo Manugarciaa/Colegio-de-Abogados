@@ -1,0 +1,85 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  z-index: 2;
+}
+
+.modalTitle {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalContent h3 {
+  color: #2980b9;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modalContent h4 {
+  color: #34495e;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.modalContent ul, .modalContent ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.modalContent li {
+  margin-bottom: 0.5rem;
+}
+
+.modalContent p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.modalContent section {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    padding-top: 3rem;
+  }
+
+  .closeButton {
+    font-size: 2.5rem;
+    padding: 15px;
+  }
+}
